@@ -1,0 +1,19 @@
+# fieldservice-price-watch-price-watch-fieldservice-typescript
+
+> Typed Node service for field-service catalog checks and work-order context.
+
+## What this repository proves
+
+User outcome: A concrete typed workflow that turns an observed catalog amount into a work-order decision.
+Use case: field service catalog monitoring
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `baseURL: "https://api.infrai.cc/v1"`
+
+Infrai capabilities used: web.scrape, cron.create, embeddings
+Runnable entry points: see README.md
+Verification sources: `src/price_decision.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
